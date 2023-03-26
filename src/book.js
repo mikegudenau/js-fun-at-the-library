@@ -11,15 +11,6 @@ function buildMainCharacter(name, age, pronouns) {
   return character;
 }
 
-// Refactor
-// function buildMainCharacter(name, age, pronouns) {
-//   return character = {
-//     name: name,
-//     age: age,
-//     pronouns: pronouns,
-//   };
-// }
-
 function saveReview(review, array) {
   if (!array.includes(review)) {
     return array.push(review);
@@ -27,8 +18,7 @@ function saveReview(review, array) {
 }
 
 function calculatePageCount(bookTitle) {
-  var pages = (bookTitle.length *= 20);
-  return pages;
+  return bookTitle.length *= 20;
 }
 
 function writeBook(bookTitle, bookCharacter, genre) {
@@ -42,9 +32,8 @@ function writeBook(bookTitle, bookCharacter, genre) {
 }
 
 function editBook(bookTitle) {
-  bookTitle.pageCount = bookTitle.pageCount *= .75;
+  bookTitle.pageCount *= 0.75;
 }
-
 
 module.exports = {
   createTitle,
